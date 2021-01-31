@@ -13,6 +13,7 @@ class GetUserProfileSerializer(serializers.ModelSerializer):
                    'is_staff',
                    'is_superuser')
 
+
 class GetUserProfilePublicSerializer(serializers.ModelSerializer):
     '''info for userProfile public '''
     class Meta:
