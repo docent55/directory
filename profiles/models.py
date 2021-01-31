@@ -16,3 +16,11 @@ class UserProfile(AbstractUser):
     github = models.CharField(max_length=500, blank=True)
     birthday = models.DateField(blank=True, null=True)
     gender = models.CharField(max_length=6, choices=GENDER, default='male')
+    fieldofactivity = models.ManyToManyField('FieldOfActivity', related_name='user')
+
+class FieldOfActivity(models.Model):
+    ''''''
+    name = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.name
