@@ -44,9 +44,9 @@ INSTALLED_APPS = [
     'drf_yasg',
     'mptt',
 
-    'profiles',
-    'userBlog',
-    'comments',
+    'src.profiles',
+    'src.userBlog',
+    'src.comments',
 ]
 
 MIDDLEWARE = [

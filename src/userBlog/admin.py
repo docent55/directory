@@ -2,7 +2,7 @@
 from django.contrib import admin
 from mptt.admin import MPTTModelAdmin
 
-from userBlog.models import Post, Comment
+from src.userBlog.models import Post, Comment
 
 
 @admin.register(Post)
